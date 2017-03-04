@@ -21,4 +21,10 @@ script:
   - cmake ../
   - make
   - ./cpplzw random_byte_from_32_bytes_input.txt
-  - cmp output random_byte_from_32_bytes_input.txt
+  - cmp output random_byte_from_32_bytes_output.txt
+  - ./cpplzw random_bytes_input.txt
+  - cmp output random_bytes_output.txt
+  - ./cpplzw repeating_byte_sequence_input.txt
+  - cmp output repeating_byte_sequence_output.txt
+  - ./cpplzw single_byte_repeat_input.txt
+  - cmp output single_byte_repeat_output.txt
