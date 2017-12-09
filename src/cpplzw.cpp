@@ -1,10 +1,12 @@
 #include <string>
-#include <unordered_map>
-#include <utility>
 #include <vector>
-#include <functional>
-#include <cstddef>
+#include <unordered_map>
+#include <utility> // std::make_pair
+#include <functional> // std::hash
+#include <cstddef> // std::size_t
 
+// range of byte values used in compression output.
+// if min = 0 then the compression output can contain null characters in the middle of the string
 static constexpr int min = 1;
 static constexpr int max = 255;
 
